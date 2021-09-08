@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    background-color:rgba(214, 198, 198, 0.2);
     overflow-y: scroll;
 }
 
