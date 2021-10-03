@@ -52,14 +52,8 @@ const TestModal = () => {
 
     const submitAssets = async (assets) => {
         const filteredAssets = assets.filter(asset => asset.isSelected)
-        const responseArray = await Promise.all(filteredAssets.map((asset) => {
-            if (asset.isSelected) {
-                console.log(asset);
-                return submitAsset(asset);
-            }
-        }))
+        const responseArray = await Promise.all(filteredAssets.map(asset=> submitAsset(asset)))
         return responseArray;
-
     }
 
     const handleSubmit = async (assets) => {
